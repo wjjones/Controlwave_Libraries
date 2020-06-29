@@ -143,10 +143,3 @@ CTU_1(
 | orRank3 | REAL | VAR_OUTPUT |  |  | 0 | 0 | 0 | 0 | 0 |  | 0 |
 | orRank4 | REAL | VAR_OUTPUT |  |  | 0 | 0 | 0 | 0 | 0 |  | 0 |
 | iorLead | REAL | VAR_OUTPUT |  |  | 0 | 0 | 0 | 0 | 0 |  | 0 |
-
-
-orRank1	REAL	VAR_OUTPUT				0	0	0	0	0	0		
-orRank2	REAL	VAR_OUTPUT				0	0	0	0	0	0		
-orRank3	REAL	VAR_OUTPUT				0	0	0	0	0	0		
-orRank4	REAL	VAR_OUTPUT				0	0	0	0	0	0		
-	REAL	VAR_IN_OUT				0	0	0	0	0	0		

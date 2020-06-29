@@ -1,27 +1,24 @@
-<h1>Base-Document</h1>
+<h1>BC_Real_To_Time</h1>
 <h2>SYNOPSIS</h2>
-This is used as a template for descriptions and program
+Function Block to convert a real number to a Time
 <h2>DESCRIPTION</h2>
 To use this Program in Controlwave Designer. 
-Create a new Structure Text Program, Right Click Logical POUs>>Insert>>Program, </br> 
--   Select Language " SFC ".
+Create a new Function Block Program and Select LD as Type, Right Click Logical POUs>>Insert>>Function Block Diagram, </br> 
+-   Select Language " LD ".
 </br>
--   Copy <# Code #> Block
-</br> 
--   Create Signals from the <# Signals #> block
 
 <h2>INPUTS</h2>
 
 | Name | Type | Default Value |
 | --- | --- | --- |
-| xxxxxxxx.xxxxxx.xxxx | xxxxxxxxxx | xxxxxxxxxx |
-
+| irIN | REAL |
 
 <h2>OUTPUTS</h2>
 
 | Name | Type | Default Value |
 | --- | --- | ---|
-| xxxxxxxx.xxxxxx.xxxx | xxxxxxxxxx | xxxxxxxxxx |
+|  | Time |
+
 
 <h2>NOTES</h2>
 <h4>Version:</h4> 1.0.0 - 25/05/2020 </br>
@@ -38,18 +35,15 @@ Distributed under the MIT License (http://opensource.org/licenses/MIT)
 <h2>Code</h2>
 
 ```
-    If (this) Then {
-        xxx
-    }        
-    Else {
-        xxx
-    }
-    End If
+LD		irIN
+MUL		REAL#1.0E3
+REAL_TO_DINT	
+DINT_TO_TIME
+ST Real_To_Time
 ```
 
 <h2>Signals</h2>
 
 | Name | Type | Usage | Description | Address | Retain | PDD | TB | Hidden |   InitvalueHidden | DefaultHiddent | Redundant |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| xxx | xxx | xxx | xxx | xxx | xxx | xxx | xxx | xxx | xxx | xxx | xxx | 
-|  | BOOL | VAR_OUTPUT |  |  | 0 | 0 | 0 | 0 | 0 |  | 0 |
+| irIN | REAL | VAR_INPUT |  |  | 0 | 0 | 0 | 0 | 0 |  | 0 |
